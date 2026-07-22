@@ -52,7 +52,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight uppercase"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight uppercase"
             >
               <span className="text-white">BUILDING FAST &amp;</span>
               <br />
