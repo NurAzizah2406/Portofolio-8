@@ -14,14 +14,14 @@ const skillBars = [
 ];
 
 const techIcons = [
-  { name: "JavaScript", src: "/icons/javascript.svg", bg: "#f7df1e" },
-  { name: "CSS3", src: "/icons/css3.svg", bg: "#2965f1" },
-  { name: "HTML5", src: "/icons/html5.svg", bg: "#e34c26" },
-  { name: "Node.js", src: "/icons/nodejs.svg", bg: "#f7df1e" },
-  { name: "MongoDB", src: "/icons/mongodb.svg", bg: "#13aa52" },
-  { name: "React", src: "/icons/react.svg", bg: "#00d8ff" },
-  { name: "TypeScript", src: "/icons/typescript.svg", bg: "#3178c6" },
-  { name: "Docker", src: "/icons/docker.svg", bg: "#2496ed" },
+  { name: "JavaScript", src: "/icons/property-1=javascript.png", bg: "#f7df1e" },
+  { name: "CSS3", src: "/icons/property-1=css.png", bg: "#2965f1" },
+  { name: "HTML5", src: "/icons/property-1=html.png", bg: "#e34c26" },
+  { name: "Node.js", src: "/icons/property-1=next-js.png", bg: "#f7df1e" }, // Using Next.js icon as placeholder for Node
+  { name: "MongoDB", src: "/icons/property-1=mongo-db.png", bg: "#13aa52" },
+  { name: "React", src: "/icons/property-1=react-js.png", bg: "#00d8ff" },
+  { name: "TypeScript", src: "/icons/property-1=typescript.png", bg: "#3178c6" },
+  { name: "Docker", src: "/icons/property-1=docker.png", bg: "#2496ed" },
 ];
 
 function SkillBar({

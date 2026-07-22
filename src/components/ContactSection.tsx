@@ -83,7 +83,7 @@ export default function ContactSection() {
             {/* Portrait Image */}
             <div className="relative w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden mb-8 bg-[#0a0a0a] border border-white/5">
               <Image
-                src="/images/hero-photo.png"
+                src="/images/contact-image.png"
                 alt="Edwin Anderson"
                 fill
                 className="object-cover grayscale contrast-125 object-top"
@@ -220,11 +220,13 @@ export default function ContactSection() {
                     <Send size={32} className="text-black ml-1 mb-1" />
                     
                     {/* Status Badge (Check or X) */}
-                    <div className="absolute top-0 right-0 w-8 h-8 rounded-full bg-[#111] flex items-center justify-center border-2 border-[#0a0a0a]">
+                    <div className={`absolute top-0 right-0 w-7 h-7 rounded-full flex items-center justify-center border-2 border-[#0a0a0a] ${
+                      submitStatus === "success" ? "bg-primary" : "bg-red-500"
+                    }`}>
                       {submitStatus === "success" ? (
-                        <Check size={18} className="text-primary" strokeWidth={3} />
+                        <Check size={14} className="text-black" strokeWidth={4} />
                       ) : (
-                        <X size={18} className="text-red-500" strokeWidth={3} />
+                        <X size={14} className="text-white" strokeWidth={4} />
                       )}
                     </div>
                   </div>

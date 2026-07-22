@@ -82,7 +82,7 @@ export default function WhyChooseSection() {
             <div className="flex flex-col items-center mb-8">
               <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-700 border-2 border-white/20 mb-4 relative">
                 <Image
-                  src="/images/avatar.png"
+                  src="/images/contact-image.png"
                   alt="Working with me"
                   fill
                   className="object-cover"

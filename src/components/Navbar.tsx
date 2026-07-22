@@ -143,12 +143,12 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Links */}
-            <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-6">
+            <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-10">
               {navLinks.map((link) => (
                 <button
                   key={link.label}
                   onClick={() => handleNavClick(link.href, link.label)}
-                  className="text-left text-white text-lg font-medium transition-colors hover:text-primary"
+                  className="text-left text-white text-base font-normal transition-colors hover:text-primary"
                 >
                   {link.label}
                 </button>

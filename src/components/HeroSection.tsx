@@ -110,7 +110,7 @@ export default function HeroSection() {
               <div className="relative w-full aspect-[4/5] overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 z-10" />
                 <Image
-                  src="/images/hero-photo.png"
+                  src="/images/contact-image.png"
                   alt="Edwin Anderson - Frontend Developer"
                   fill
                   className="object-cover object-top"

@@ -134,7 +134,7 @@ export default function ServiceSection() {
             >
               <div className="rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-[#111] aspect-[4/3] flex items-center justify-center">
                 <Image
-                  src="/images/portfolio-preview-1.png"
+                  src="/images/image-11.png"
                   alt="Portfolio preview 1"
                   width={288}
                   height={216}
@@ -144,7 +144,7 @@ export default function ServiceSection() {
                   }}
                 />
                 {/* Placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center -z-10">
                   <div className="text-center p-4">
                     <div className="w-full h-3 bg-white/10 rounded mb-2" />
                     <div className="w-3/4 h-3 bg-white/10 rounded mb-4" />
@@ -172,7 +172,7 @@ export default function ServiceSection() {
             >
               <div className="rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-[#111] aspect-[4/3] flex items-center justify-center relative">
                 <Image
-                  src="/images/portfolio-preview-2.png"
+                  src="/images/image-12.png"
                   alt="Portfolio preview 2"
                   width={288}
                   height={216}
@@ -181,7 +181,7 @@ export default function ServiceSection() {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center -z-10">
                   <div className="text-center p-4 w-full">
                     <div className="w-full h-2 bg-white/10 rounded mb-2" />
                     <div className="w-full h-16 bg-white/5 rounded mb-2" />
@@ -205,7 +205,7 @@ export default function ServiceSection() {
             >
               <div className="rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-[#111] aspect-[4/3] relative">
                 <Image
-                  src="/images/portfolio-preview-3.png"
+                  src="/images/image-13.png"
                   alt="Portfolio preview 3"
                   width={208}
                   height={156}

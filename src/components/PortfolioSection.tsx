@@ -9,7 +9,7 @@ const projects = [
     title: "Dashboard SaaS Task Management",
     description:
       "Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.",
-    image: "/images/project-1.png",
+    image: "/images/image-5.png",
     link: "#",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     title: "Dashboard SaaS Task Management",
     description:
       "Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.",
-    image: "/images/project-2.png",
+    image: "/images/image-6.png",
     link: "#",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     title: "Dashboard SaaS Task Management",
     description:
       "Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.",
-    image: "/images/project-3.png",
+    image: "/images/image-7.png",
     link: "#",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     title: "Dashboard SaaS Task Management",
     description:
       "Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.",
-    image: "/images/project-4.png",
+    image: "/images/image-8.png",
     link: "#",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     title: "Dashboard SaaS Task Management",
     description:
       "Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.",
-    image: "/images/project-5.png",
+    image: "/images/image-9.png",
     link: "#",
   },
   {
@@ -49,7 +49,7 @@ const projects = [
     title: "Dashboard SaaS Task Management",
     description:
       "Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.",
-    image: "/images/project-6.png",
+    image: "/images/image-10.png",
     link: "#",
   },
 ];
