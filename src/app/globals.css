@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #84cc16;
+  --primary-dark: #65a30d;
+  --primary-light: #a3e635;
+  --background: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #84cc16;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #65a30d;
+}
+
+/* Selection */
+::selection {
+  background: rgba(132, 204, 22, 0.3);
+  color: #ffffff;
+}
+
+/* ============================
+   UTILITY CLASSES
+   ============================ */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #84cc16, #a3e635);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .bg-glass-green {
+    background: rgba(132, 204, 22, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(132, 204, 22, 0.15);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 30px rgba(132, 204, 22, 0.3),
+                0 0 60px rgba(132, 204, 22, 0.1);
+  }
+
+  .glow-green-sm {
+    box-shadow: 0 0 15px rgba(132, 204, 22, 0.25);
+  }
+
+  .border-green-glow {
+    border: 1px solid rgba(132, 204, 22, 0.3);
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-28;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-8px) rotate(1deg); }
+  66% { transform: translateY(4px) rotate(-1deg); }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(132, 204, 22, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(132, 204, 22, 0.6), 0 0 80px rgba(132, 204, 22, 0.2);
+  }
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--progress-width); }
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-float {
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.animate-marquee-scroll {
+  animation: marqueeScroll 25s linear infinite;
+}
+
+/* Checkerboard pattern */
+.checkerboard-pattern {
+  background-image:
+    linear-gradient(45deg, #1a2e00 25%, transparent 25%),
+    linear-gradient(-45deg, #1a2e00 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1a2e00 75%),
+    linear-gradient(-45deg, transparent 75%, #1a2e00 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Hero background effect */
+.hero-bg-overlay {
+  background: radial-gradient(ellipse at 70% 50%, rgba(132, 204, 22, 0.08) 0%, transparent 70%),
+              radial-gradient(ellipse at 30% 80%, rgba(0, 0, 0, 0.8) 0%, transparent 60%);
+}
+
+/* Green corner decoration */
+.corner-decoration {
+  position: absolute;
+  background-color: #84cc16;
+  opacity: 0.8;
+}
+
+/* Skill bar */
+.skill-bar-fill {
+  animation: progressFill 1.5s ease-out forwards;
+  background: linear-gradient(90deg, #1a4a00, #4a8c00, #84cc16);
+}
+
+/* Timeline */
+.timeline-line {
+  background: linear-gradient(180deg, transparent, #84cc16 20%, #84cc16 80%, transparent);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(132, 204, 22, 0.1);
+}
+
+/* Navigation active indicator */
+.nav-active {
+  background-color: #84cc16;
+  color: #000000;
+  padding: 4px 16px;
+  border-radius: 4px;
+}
+
+/* Star/asterisk icon */
+.star-icon {
+  color: #84cc16;
+  font-size: 20px;
+}
